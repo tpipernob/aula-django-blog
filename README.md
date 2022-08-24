@@ -2,8 +2,10 @@
 Exemplo didático de uma aplicação django
 
 # Como usar?
-1 - Baixar os códigos no github:
-https://github.com/tpipernob/aula-django-blog 
+1 - Baixar os códigos no github:  
+
+https://github.com/tpipernob/aula-django-blog   
+
 2 - Descompactar em uma pasta no seu computador
 3 - Abrir o projeto no VsCode (ou de preferência)
 4 - Criar o ambiente virtual
