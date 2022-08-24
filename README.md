@@ -6,10 +6,14 @@ Exemplo didático de uma aplicação django
 
 https://github.com/tpipernob/aula-django-blog   
 
-2 - Descompactar em uma pasta no seu computador
-3 - Abrir o projeto no VsCode (ou de preferência)
-4 - Criar o ambiente virtual
-python -m venv venv
+2 - Descompactar em uma pasta no seu computador. 
+
+3 - Abrir o projeto no VsCode (ou de preferência). 
+
+4 - Criar o ambiente virtual. 
+
+python -m venv venv. 
+
 5 - Acessar o ambiente virtual
 .\venv-projeto1\Scripts\activate
 6 - Instalar dependências
