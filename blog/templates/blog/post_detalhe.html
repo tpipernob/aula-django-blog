@@ -55,19 +55,17 @@
     </div>
 
     <!-- https://getbootstrap.com.br/docs/4.1/components/card/ -->
-    <div class="container">
-        <h3>Nossos últimos posts:</h3>
+    <div class="container">        
         
-        {% for post in posts %}  
-            <div class="card">
-                <div class="card-body">
-                <h5 class="card-title">{{ post.titulo }}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">{{ post.autor }}</h6>
-                <p class="card-text">{{ post.conteudo|safe|truncatechars:100 }}</p>
-                <a href="{% url 'post-detalhe' post.pk  %}" class="card-link">Leia mais</a>              
-                </div>
+        <div class="card">
+            <div class="card-body">
+            <h5 class="card-title">{{ post.titulo }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ post.autor }}</h6>
+            <p class="card-text">{{ post.conteudo|safe}}</p>
+                         
             </div>
-        {% endfor %}
+        </div>
+        
     </div>
 
     <div class="jumbotron text-center fundoAzul" style="margin-bottom:0; margin-top: 20px;">
