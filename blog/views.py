@@ -10,7 +10,6 @@ class post_list(generic.ListView):
     def get_queryset(self):
         return Post.objects.all().order_by('-data')[:3]
 
-
 # def post_list(request):
 #     posts = Post.objects.all()
 #     return render(request, 'blog/home.html', {'posts' : posts})
