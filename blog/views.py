@@ -2,6 +2,7 @@ from urllib import request
 from django.shortcuts import render
 from .models import Post
 from django.views import generic
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 class post_list(generic.ListView):
     model = Post
@@ -14,7 +15,7 @@ class post_list(generic.ListView):
 #     posts = Post.objects.all()
 #     return render(request, 'blog/home.html', {'posts' : posts})
 
-class post_detalhe(generic.DetailView):
+class post_detalhe(LoginRequiredMixin, generic.DetailView):
     model = Post
     template_name = 'blog/post_detalhe.html'
 
